@@ -13,14 +13,14 @@ describe("factorial", function() {
     });
 
     it("returns NaN if n is negative", function() {
-      assert.equal(factorial(-1),NaN);
+      assert.isNaN(factorial(-1));
     });
 
     it("returns NaN if n is non-integer", function() {
-      assert.equal(factorial(0.1),NaN);
-      assert.equal(factorial(0.9),NaN);
-      assert.equal(factorial(1.1),NaN);
-      assert.equal(factorial(1.9),NaN);
+      assert.isNaN(factorial(0.1));
+      assert.isNaN(factorial(0.9));
+      assert.isNaN(factorial(1.1));
+      assert.isNaN(factorial(1.9));
     });
 
   });
